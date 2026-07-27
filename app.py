@@ -1,5 +1,5 @@
 """
-Aero Engine Survival Analysis — Streamlit Application
+Aero Engine Failure Analysis — Streamlit Application
 ======================================================
 Upload a failure dataset, the app runs the full pipeline automatically:
     1. IID verification (Laplace trend + Mann-Kendall + Spearman lag)
@@ -25,7 +25,7 @@ warnings.filterwarnings('ignore')
 
 # ── PAGE CONFIG ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Engine Survival Analysis",
+    page_title="Engine Failure Analysis",
     page_icon="",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -424,7 +424,7 @@ def expected_failures_nhpp(t_val, beta, lam, T_obs):
 
 # ── MAIN APP ──────────────────────────────────────────────────────────────────
 
-st.markdown('<h1>Engine Survival Analysis</h1>', unsafe_allow_html=True)
+st.markdown('<h1>Engine Failure Analysis</h1>', unsafe_allow_html=True)
 st.markdown(
     '<p style="color:#8b949e; font-size:0.9rem; margin-top:0; margin-bottom:2rem;">'
     'Upload failure data — the pipeline runs automatically: '
