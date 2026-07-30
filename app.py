@@ -27,7 +27,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from scipy.stats import weibull_min, lognorm, expon
-from logger import logging
+
 
 # ── PAGE CONFIG ───────────────────────────────────────────────────────────────
 st.set_page_config(
