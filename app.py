@@ -586,7 +586,7 @@ if uploaded is None and demo_choice is None:
 
 # ── LOAD DATA ─────────────────────────────────────────────────────────────────
 import os
-DEMO_DIR = 'data/'
+DEMO_DIR = 'demo_data/'
 
 try:
     if uploaded is not None:
